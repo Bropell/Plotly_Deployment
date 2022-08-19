@@ -65,11 +65,11 @@ function buildCharts(sample) {
 
     //  5. Create a variable that holds the first sample in the array.
     var firstSample = resultArray[0];
-    PANEL = d3.select("#sample-samples");
+    var PANEL = d3.select("#sample-samples");
     PANEL.html("");
     // 6. Create variables that hold the otu_ids, otu_labels, and sample_values.
     var otu_id = [];
-    Object.entries(firstSample.otu_id).forEach(([key, value]) => {otu_id.push(`${value}`)});    
+    Object.entries(result.otu_ids).forEach(([key, value]) => {otu_ids.push(`${value}`)});  
     var otu_labels = [];
     Object.entries(firstSample.otu_labels).forEach(([key, value]) => {otu_labels.push(`${value}`)});
     var sample_values = [];
