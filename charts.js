@@ -83,6 +83,7 @@ function buildCharts(sample) {
     console.log(otu_ids);
     console.log(otu_labels);
     console.log(sample_values);
+    console.log(yticks);
     // 8. Create the trace for the bar chart. 
     var trace = {
       x: sample_values,
