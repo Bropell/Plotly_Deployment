@@ -86,7 +86,7 @@ function buildCharts(sample) {
     console.log(yticks);
     // 8. Create the trace for the bar chart. 
     var trace = {
-      x: sample_values,
+      x: sample_values.slice(0,10).reverse(),
       y: yticks,
       type: "bar",
       orientation: "h",
