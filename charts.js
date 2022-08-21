@@ -111,7 +111,7 @@ function buildCharts(sample) {
       y: sample_values,
       text: otu_labels,
       mode: "markers",
-      markers: {
+      marker: {
         color: otu_ids,
         size: sample_values,
         colorscale: "fall"
@@ -124,7 +124,7 @@ function buildCharts(sample) {
     var bubbleLayout = {
       title: "Bacteria Cultures Per Sample",
       xaxis: {title: "OTU ID"},
-      hovertext: otu_labels      
+      hovertext: otu_ids, otu_labels      
     };
 
     // 3. Use Plotly to plot the data with the layout.
