@@ -113,7 +113,8 @@ function buildCharts(sample) {
       mode: "markers",
       marker: {
         color: otu_ids,
-        size: sample_values       
+        size: sample_values,
+        colorscale: "rainbow"       
       }  
     };
 
